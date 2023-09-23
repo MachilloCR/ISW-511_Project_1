@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cambalache.Com</title>
+    <link rel="stylesheet" href="Styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+</head>
+
+<body>
+    <header>
+        <div class="container-fluid p-2">
+            <div class="row">
+                <div class="col-4">
+                    <img id="imgLogo" src="Images/Logo_cambalaches.png" alt="Logo">
+                </div>
+                <div class="col-8 d-flex justify-content-end align-items-center">
+                    <div class="row">
+                        <div id="botonesMenu" class="col">
+                            <a class="btn btn-NavMenu" href="Index.html">Inicio</a>
+                            |
+                            <a class="btn btn-NavMenu" href="Cambalaches.html">Cambalaches</a>
+                            |
+                            <a class="btn btn-NavMenu"  id="btnCerrarIngresar">Ingresar</a>
+                            <a class="btn btn-Primary" href="Index.html">🛒 Mi Carrito</a>
+                        </div>
+                        <div id="dropDownMenu" class="col">
+                            <div class="dropdown">
+                                <button class="btn btn-menuDropdown dropdown-toggle" type="button"
+                                    data-bs-toggle="dropdown" data-bs-auto-close="true" aria-expanded="false">☰
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="Index.html">Inicio</a></li>
+                                    <li><a class="dropdown-item" href="Cambalaches.html">Cambalaches</a></li>
+                                    <li><a class="dropdown-item" id="btnCerrarIngresar" >Ingresar</a></li>
+                                    <li><a class="dropdown-item" href="Index.html">🛒 Mi Carrito</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <main>
+        <div class="container flex-column text-center">
+            <div class="row d-flex justify-content-center">
+                <div class="col-sm-8 col-lg-6 p-4">
+                    <h1>Inicia tu Cambalache</h1>
+                    <form class="d-flex align-items-center" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-Primary" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+    <section>
+        <div class="container flex-column text-center">
+            <div class="row d-flex justify-content-center">
+                <div class="col-lg-8">
+                    <h2>Categorias</h2>
+                    <p>Selecciona la categoria en la cual estas interesado para ver productos relacionados</p>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col d-flex justify-content-center">
+                                <a href="Cambalaches.html" class="catLink">
+                                    <div class="catArticle">
+                                        <h2>Electronicos</h2>
+                                        <div class="catImageHolder">
+                                            <img src="Images/cat_electronicos_logo.png" alt="electronicos">
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col d-flex justify-content-center">
+                                <a href="Cambalaches.html" class="catLink">
+                                    <div class="catArticle">
+                                        <h2>Deportes</h2>
+                                        <div class="catImageHolder">
+                                            <img src="Images/cat_deportes_logo.png" alt="deportes">
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col d-flex justify-content-center">
+                                <a href="Cambalaches.html" class="catLink">
+                                    <div class="catArticle">
+                                        <h2>Cocina</h2>
+                                        <div class="catImageHolder">
+                                            <img src="Images/cat_cocina_logo.png" alt="cocina">
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <Section class="container">
+        <div class="row text-center">
+            <div class="col">
+                <h2>Cambalaches Recientes</h2>
+            </div>
+        <div class="row">
+            <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                </div>
+
+                <div class="carousel-inner" id="slider">
+                    <!-- <div class="carousel-item active" data-bs-interval="5000">
+                        <a><img src="Products/Play_5.jpg" class="d-block w-50 m-auto" alt="..."></a>
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>First slide label</h5>
+                            <p>Some representative placeholder content for the first slide.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="5000">
+                        <img src="Products/patines.webp" class="d-block w-50 m-auto" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Second slide label</h5>
+                            <p>Some representative placeholder content for the second slide.</p>
+                        </div>
+                    </div> -->
+                </div>
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+
+            </div>
+        </div>    
+    </Section>
+    <footer class="footer mt-auto py-2">
+        <div class="container container-sm">
+            <div class="col text-center">
+                <a class="btn" href="Index.html">Inicio</a>
+                |
+                <a class="btn" href="Cambalaches.html">Cambalaches</a>
+                |
+                <a class="btn" href="Ingreso.html">Ingresar</a>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+        <script src="productos.js"></script>
+</body>
+
+
+</html>

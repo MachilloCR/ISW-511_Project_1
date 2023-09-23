@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar Producto</title>
+    <link rel="stylesheet" href="Styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+</head>
+
+<body>
+    <Header>
+        <div class="container-fluid p-2">
+            <div class="row">
+                <div class="col-4">
+                    <img id="imgLogo" src="Images/Logo_cambalaches.png" alt="Logo">
+                </div>
+                <div class="col-8 d-flex justify-content-end align-items-center">
+                    <div class="row">
+                        <div id="botonesMenu" class="col">
+                            <a class="btn btn-NavMenu" href="Index.html">Inicio</a>
+                            |
+                            <a class="btn btn-NavMenu" href="Cambalaches.html">Cambalaches</a>
+                            |
+                            <a class="btn btn-NavMenu" href="Dashboard.html">Dahsboard</a>
+                            |
+                            <a class="btn btn-NavMenu" onclick="cerrarsesion()">Cerrar sesion</a>
+                            <a class="btn btn-Primary" href="Index.html">🛒 Mi Carrito</a>
+                        </div>
+                        <div id="dropDownMenu" class="col">
+                            <div class="dropdown">
+                                <button class="btn btn-menuDropdown dropdown-toggle" type="button"
+                                    data-bs-toggle="dropdown" data-bs-auto-close="true" aria-expanded="false">☰
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="Index.html">Inicio</a></li>
+                                    <li><a class="dropdown-item" href="Cambalaches.html">Cambalaches</a></li>
+                                    <li><a class="dropdown-item" onclick="cerrarsesion()">Cerrar sesion</a></li>
+                                    <li><a class="dropdown-item" href="Index.html">🛒 Mi Carrito</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </Header>
+
+    <main class="container-md flex-column">
+        <div class="row row-cols-1 justify-content-center d-flex align-items-center g-4">
+            <div class="col text-center">
+                <h1>Nuevo Producto</h1>
+            </div>
+            <div class="col-lg-4 col-sm-6">
+                <div class="mb-3">
+                    <label for="Nombre_prodlbl" class="form-label">Nombre del Producto</label>
+                    <input type="text" class="form-control" id="ProdNom">
+                </div>
+                <div class="mb-3">
+                    <label for="decripcionlbl" class="form-label">Descripción</label>
+                    <input type="text" class="form-control" id="Descripcion">
+                </div>
+                <div class="mb-3">
+                    <label for="Fotolbl" class="form-label">URL Foto/Imagen</label>
+                    <input type="text" class="form-control" id="UrlFoto">
+                </div>
+                <div class="mb-3">
+                    <label for="Buscolbl" class="form-label">Busco</label>
+                    <input type="text" class="form-control" id="Busco">
+                </div>
+            </div>
+            <div class="row-cols-1 justify-content-center d-flex align-items-center g-4">
+                <div class="col-lg-2 text-center">
+                    <a class="btn" id="btnAgregar">Agregar</a>
+                    <a class="btn" href="Dashboard.html">Cancelar</a>
+                </div>
+            </div>
+            
+        </div>
+    </main>
+    <footer class="footer mt-auto py-2">
+        <div class="container container-sm">
+            <div class="col text-center">
+                <a class="btn" href="Index.html">Inicio</a>
+                |
+                <a class="btn" href="Cambalaches.html">Cambalaches</a>
+                |
+                <a class="btn" href="Ingreso.html">Ingresar</a>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+    <script src="productos.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,99 @@
+
+Body {
+    font-size: 12px;
+    Color: #606060 !important;
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+}
+
+Footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top-style: solid;
+    border-width: 1px;
+    background: #bbbbbb;
+}
+
+Header {
+    background-color: #bbbbbb;
+    border-bottom-color: black ;
+    border-width: 1px;
+    border-bottom-style: solid;
+}
+.link {
+    color: #c95555;
+    font-weight: bold;
+}
+
+
+/* --------------------- Botones ---------------------*/
+.btn-NavMenu{
+    
+}
+
+.btn-Primary{
+    background-color: #e51b23  !important;
+    color: white !important;
+}
+
+/* imagen logo header */
+#imgLogo {
+    width: 150px;
+}
+
+/* --------------------- Categorias Pag Index  ---------------------*/
+.catLink {
+    color: #e51b23 !important;
+    text-decoration: none;
+}
+
+.catLink :hover {
+    color: black;
+}
+.catArticle {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 200px;
+    border-style: solid;
+    background: white;
+    border-width: 1px;
+}
+.catArticle h2 {
+    font-size: 20px;
+}
+.catImageHolder img {
+    width: 100px;
+}
+
+#lookingForProd {
+    height: 100px;
+    resize: none;
+}
+/* --------------------- Detalle de productos --------------------- */
+#imgDetalleProd{
+    width: 34rem;
+}
+
+/* --------------------- Evento Dropdown Menu --------------------- */
+#dropDownMenu{
+    display: none;
+}
+
+@media only screen and (max-width: 600px) {
+    .catContainer {
+        flex-direction: column;
+        justify-content: space-evenly;
+        width: 300px;
+    }
+    #dropDownMenu{
+        display: block;
+    }
+    #botonesMenu{
+        display: none;
+    }
+}
